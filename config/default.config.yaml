@@ -1,0 +1,52 @@
+---
+server: irc.server.com
+botName: name
+identification: NickServ
+password: password
+
+options:
+  userName: 'kamabot'
+  realName: 'nodeJS kamabot'
+  port: 6667
+  localAddress: null
+  debug: false
+  showErrors: false
+  autoRejoin: false
+  autoConnect: true
+  channels:
+    - '#kamabot'
+  secure: false
+  selfSigned: false
+  certExpired: false
+  floodProtection: false
+  floodProtectionDelay: 1000
+  sasl: false
+  stripColors: false
+  channelPrefixes: &#
+  messageSplit: 512
+  encoding: ''
+
+mods:
+  uploadpic:
+    host: imgur
+    default: example
+    options:
+      example: [ 'example', '/' ]
+    # keyword: [ description, path ]
+
+  botinfo:
+    commands:
+      .kamabot: 'I am kamabot.'
+      .info: 'I am kamabot.'
+      .github: 'https://github.com/pverm/kamabot'
+      .git: 'https://github.com/pverm/kamabot'
+
+  youtubeinfo:
+    apikey: ''
+
+  tweet:
+    api_key: ''
+    api_secret: ''
+    access_token: ''
+    access_token_secret: ''
+
